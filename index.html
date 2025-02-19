@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag specifying the character encoding for the HTML document -->
+    <meta charset="UTF-8">
+    <!-- Title for your HTML document, showed in browser title bar or tab -->
+    <title>Musical Math</title>
+    <!-- Importing the MusicTools.js JavaScript module for providing conversion functions -->
+    <script src="MusicTools.js" type="module"></script>
+    <!-- Importing the script.js JavaScript module, deferred until the HTML is parsed -->
+    <script src="script.js" type="module" defer></script>
+</head>
+<body>
+<!-- Title of the web page -->
+<h1>Musical Math Conversions</h1>
+<div>
+    <!-- Section to convert MIDI Pitch to Frequency -->
+    <h2>MIDI Pitch to Frequency</h2>
+    <input id="midiInput" type="number" placeholder="MIDI Pitch">
+    <button id="midiToFreq">Convert</button>
+    <p>Result: <span id="freqResult"></span> Hz</p>
+</div>
+<div>
+    <!-- Section to convert Frequency to MIDI Pitch -->
+    <h2>Frequency to MIDI Pitch</h2>
+    <input id="freqInput" type="number" placeholder="Frequency">
+    <button id="freqToMidi">Convert</button>
+    <p>Result: <span id="midiResult"></span></p>
+</div>
+<div>
+    <!-- Section to convert dBFS to Linear Amplitude -->
+    <h2>dBFS to Linear Amplitude</h2>
+    <input id="dbfsInput" type="number" placeholder="dBFS">
+    <button id="dbfsToLinear">Convert</button>
+    <p>Result: <span id="linearResult"></span></p>
+</div>
+<div>
+    <!-- Section to convert Linear Amplitude to dBFS -->
+    <h2>Linear Amplitude to dBFS</h2>
+    <input id="linearInput" type="number" placeholder="Linear Amplitude">
+    <button id="linearToDbfs">Convert</button>
+    <p>Result: <span id="dbfsResult"></span> dBFS</p>
+</div>
+</body>
+</html>
